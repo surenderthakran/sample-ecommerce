@@ -3,18 +3,21 @@ import './App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import ShopCategory from './Pages/ShopCategory';
+import Shop from './Pages/Shop';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
-import Hero from './Components/Hero/Hero';
+
+// import Popular from './Components/Popular/Temp';
 
 
 function App() {
   return (
-    <div>
+    <div> 
       <BrowserRouter>
       <Navbar/>
-      <Hero/>
+      <Shop/>
+      
       <Routes>
         <Route path='/' element= {<ShopCategory category="shop"/>}/>
         <Route path='/mens' element= {<ShopCategory category="men"/>}/>
