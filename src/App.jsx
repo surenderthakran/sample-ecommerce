@@ -5,7 +5,6 @@ import Navbar from './Components/Navbar/Navbar';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
-import LoginSignup from './Pages/LoginSignup';
 import Hero from './Components/Hero/Hero';
 
 
@@ -24,7 +23,7 @@ function App() {
           <Route path=':productedID' element={<Product/>}/>
         </Route>
         <Route path='/cart' element= {<Cart/>}/>
-        <Route path='/login' element= {<LoginSignup/>}/>
+        
 
       </Routes>
       </BrowserRouter>
