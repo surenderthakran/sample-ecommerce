@@ -6,7 +6,7 @@ import ShopCategory from './Pages/ShopCategory';
 import Shop from './Pages/Shop';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
-import LoginSignup from './Pages/LoginSignup';
+
 
 // import Popular from './Components/Popular/Temp';
 
@@ -27,7 +27,7 @@ function App() {
           <Route path=':productedID' element={<Product/>}/>
         </Route>
         <Route path='/cart' element= {<Cart/>}/>
-        <Route path='/login' element= {<LoginSignup/>}/>
+        
 
       </Routes>
       </BrowserRouter>
