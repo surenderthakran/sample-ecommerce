@@ -2,7 +2,7 @@ import React from 'react'
 import './Hero.css'
 import hansd_icon from '../Assets/hand_icon.png'
 import arrow_icon from '../Assets/arrow.png'
-import hero_image from '../Assets/hero_image'
+import hero_image from '../Assets/hero_image.png'
 
 
 const Hero = () => {
@@ -29,4 +29,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
