@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
@@ -9,6 +10,15 @@ import Hero from './Components/Hero/Hero';
 
 
 function App() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/api/products")
+    .then((res) => res.json())
+    .then((data) => setProducts(data))
+    .catch((err) => console.error("Error fetching:", err));
+  }, []);
+
   return (
     <div>
       <BrowserRouter>
