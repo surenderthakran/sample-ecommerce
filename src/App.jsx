@@ -6,14 +6,12 @@ import ShopCategory from './Pages/ShopCategory';
 import Shop from './Pages/Shop';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
-
 function App() {
   return (
     <div> 
       <BrowserRouter>
       <Navbar/>
       <Shop/>
-      
       <Routes>
         <Route path='/' element= {<ShopCategory category="shop"/>}/>
         <Route path='/mens' element= {<ShopCategory category="men"/>}/>
