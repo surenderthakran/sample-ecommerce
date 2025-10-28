@@ -7,10 +7,6 @@ import Shop from './Pages/Shop';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 
-
-// import Popular from './Components/Popular/Temp';
-
-
 function App() {
   return (
     <div> 
