@@ -3,9 +3,9 @@ import './App.css';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import ShopCategory from './Pages/ShopCategory';
-import Shop from './Pages/Shop';
-import Product from './Pages/Product';
-import Cart from './Pages/Cart';
+import Shop from '../Pages/Shop';
+import Product from '../Pages/Product';
+import Cart from '../Pages/Cart';
 
 
 
